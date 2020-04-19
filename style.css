@@ -1,0 +1,116 @@
+/*
+    @author: Italo Adler
+    @year: 2020
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    font-family: 'Black Ops One', monospace;
+    margin: 0vw 1vw 1vw 1vw;
+    display: flex;
+    flex-flow: row-reverse;
+    align-items: baseline;    
+    justify-content: space-between;
+}
+
+nav {
+    font-size: large;
+}
+
+#logo {
+    display: flex;
+    flex-direction: row;
+    align-content: flex-end;
+    margin: 0vw 4vw 0vw 0vw;
+    color: #C95D63;
+}
+#logo:hover {
+    color: #AE8799;
+}
+
+#burger {
+    margin: 1vw 4vw 4vw 4vw; 
+    transform: rotate(0);
+    transition: 0.5s ease;
+}
+
+#burger input {
+    transform: scale(5); 
+    margin: 30px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 1;
+}
+
+.bar-1,
+.bar-2,
+.bar-3 {
+    width: 50px;
+    height: 3px;
+    background-color: #496DDB;
+    margin: 6px 0;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+#burger input:checked ~ .bar-1 {
+    color: #717EC3;
+    transform: rotate(-45deg) translate(-7px, 6px);
+    transition: 0.5s ease; 
+}
+#burger input:checked ~ .bar-2 {
+    opacity: 0;
+}
+#burger input:checked ~ .bar-3 {
+    color: #717EC3;
+    transform: rotate(45deg) translate(-7px, -6px);
+    transition: 0.5s ease;
+}
+
+#burger input:checked ~ ul {
+    opacity: 1;
+}
+
+ul {
+    font-size: large;
+    padding: 0;
+    margin-top: -25px;
+    margin-left: 55px;
+    opacity: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+
+}
+
+#burger li {
+    margin: 0vw 1vw;
+}
+
+#burger a {
+    color: #496DDB;
+    text-decoration: none;
+
+}
+
+#burger a:hover {
+    color: #717EC3;
+    text-decoration: double solid  #AE8799; 
+ 
+}
+
+
+
