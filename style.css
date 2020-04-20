@@ -21,7 +21,12 @@ header {
     align-items: baseline;    
     justify-content: space-between;
 }
-
+footer {
+    font-family: 'Black Ops One', monospace;
+    display: flex;
+    justify-content: center;
+    color: #C95D63;
+}
 nav {
     font-size: large;
 }
@@ -32,6 +37,7 @@ nav {
     align-content: flex-end;
     margin: 0vw 4vw 0vw 0vw;
     color: #C95D63;
+    cursor: pointer;
 }
 #logo:hover {
     color: #AE8799;
@@ -59,7 +65,7 @@ nav {
 .bar-3 {
     width: 50px;
     height: 3px;
-    background-color: #496DDB;
+    background-color: #C95D63;
     margin: 6px 0;
     transition: 0.4s;
     cursor: pointer;
@@ -101,19 +107,20 @@ ul {
 }
 
 #burger a {
-    color: #496DDB;
+    color: #AE8799;;
     text-decoration: none;
 
 }
 
 #burger a:hover {
-    color: #717EC3;
-    text-decoration: double solid  #AE8799; 
- 
+    color: #C95D63;
+    text-decoration: underline;
+    font-weight: lighter;
 }
 article {
     font-family: 'Playfair Display', serif;
-    padding: 2vw 0vw;
+    display: flex;
+    flex-flow: wrap;
     justify-content: left;
     text-align: justify;
     color: #555555;
@@ -123,7 +130,7 @@ article {
     display: grid;
     grid-template-columns: 0fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    gap: 20px 20px;
+    gap: 60px 60px;
     grid-template-areas: ". top-content first-graph first-graph" ". full-graph full-graph full-graph" ". bottom-content second-graph second-graph";
   }
   
