@@ -107,30 +107,41 @@ ul {
 }
 
 #burger a {
-    color: #AE8799;;
+    
+    color: #C95D63;
     text-decoration: none;
 
 }
 
 #burger a:hover {
-    color: #C95D63;
+    color: #AE8799;
     text-decoration: underline;
     font-weight: lighter;
 }
+em {
+    letter-spacing: 0.1em;
+    word-spacing: 0.01em;
+}
 article {
     font-family: 'Playfair Display', serif;
+    padding: 0;
     display: flex;
     flex-flow: wrap;
     justify-content: left;
     text-align: justify;
     color: #555555;
+    letter-spacing: 0.15em;
+    word-spacing: 0.01rem;
+}
+article p {
+    margin: 5px 10px 10px 5px;
 }
 .grid-container {
     margin: 2vw 4vw;
     display: grid;
     grid-template-columns: 0fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    gap: 60px 60px;
+    gap: 60px 10px;
     grid-template-areas: ". top-content first-graph first-graph" ". full-graph full-graph full-graph" ". bottom-content second-graph second-graph";
   }
   
@@ -144,5 +155,39 @@ article {
   
   .second-graph { grid-area: second-graph; }
 
+  #about {
+    display: none;
+  }  
 
+
+ 
+  .about-container:target {
+    display: none;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr;
+    gap: 1px 1px;
+    grid-template-areas: ". . . ." "gif-area gif-area text-area text-area" ". . . .";
+  }
+  
+  .gif-area {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1px 1px;
+    grid-template-areas: "social picture picture" "social picture picture";
+    grid-area: gif-area;
+  }
+  
+  .social {
+    display: grid;
+    grid-template-columns: 1fr 1.1fr 0.9fr;
+    grid-template-rows: 1.1fr 0.9fr 1fr;
+    gap: 1px 1px;
+    grid-template-areas: ". . ." ". . ." ". . .";
+    grid-area: social;
+  }
+  
+  .picture { grid-area: picture; }
+  
+  .text-area { grid-area: text-area; }
 
