@@ -111,6 +111,31 @@ ul {
     text-decoration: double solid  #AE8799; 
  
 }
+article {
+    font-family: 'Playfair Display', serif;
+    padding: 2vw 0vw;
+    justify-content: left;
+    text-align: justify;
+    color: #555555;
+}
+.grid-container {
+    margin: 2vw 4vw;
+    display: grid;
+    grid-template-columns: 0fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px 20px;
+    grid-template-areas: ". top-content first-graph first-graph" ". full-graph full-graph full-graph" ". bottom-content second-graph second-graph";
+  }
+  
+  .full-graph { grid-area: full-graph; }
+  
+  .first-graph { grid-area: first-graph; }
+  
+  .top-content { grid-area: top-content; }
+  
+  .bottom-content { grid-area: bottom-content; }
+  
+  .second-graph { grid-area: second-graph; }
 
 
 

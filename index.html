@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Covid-19 information hub</title>
 </head>
@@ -29,5 +30,45 @@
             </div>
         </nav>
     </header>
+
+
+    <div class="grid-container">
+        <div class="full-graph"><iframe src="https://ourworldindata.org/grapher/full-list-daily-covid-19-tests-per-thousand" style="width: 100%; height: 600px; border: 0px none;"></iframe></div>
+        <div class="first-graph"><iframe src="https://ourworldindata.org/grapher/covid-confirmed-deaths-since-5th-death?country=CHN" style="width: 100%; height: 600px; border: 0px none;"></iframe></div>
+        <div class="top-content"> 
+            <article>
+                <p>Charts which simply show the change in confirmed deaths over time are not very useful to answer the question of how the <em>speed</em> 
+                of the outbreak compares between different countries. 
+                This is because the outbreak of COVID-19 did not begin at the same time in all countries.</p>
+                <p>This chart here is designed to allow such comparisons.</p>         
+                <p>The trajectory for each country begins on the day when that country had&nbsp;5 confirmed deaths.</p>
+                <p>This allows you to compare how rapidly the number of confirmed deaths increased after the outbreak reached a similar stage in each country.</p>
+                <p><strong>The grey lines in the background help you to see how rapidly the number of confirmed deaths is increasing</strong><br>These lines show the 
+                    trajectories for doubling times of 1, 2, 3, 5, 
+                    and 10 days. If the slope that a country is on is steeper than a particular grey line, then the doubling time of confirmed cases in that country is 
+                    faster than that. For example, there are several countries for which 
+                    the slope was steeper than the ‘…every 2 days’ line – this means their case count doubled faster than every two days.
+                </p>  
+             </article>
+        </div>
+        <div class="bottom-content">
+            <article>
+                <p>Charts which simply show the change in confirmed deaths over time are not very useful to answer the question of how the <em>speed</em> 
+                of the outbreak compares between different countries. 
+                This is because the outbreak of COVID-19 did not begin at the same time in all countries.</p>
+                <p>This chart here is designed to allow such comparisons.</p>         
+                <p>The trajectory for each country begins on the day when that country had&nbsp;5 confirmed deaths.</p>
+                <p>This allows you to compare how rapidly the number of confirmed deaths increased after the outbreak reached a similar stage in each country.</p>
+                <p><strong>The grey lines in the background help you to see how rapidly the number of confirmed deaths is increasing</strong><br>These lines show the 
+                    trajectories for doubling times of 1, 2, 3, 5, 
+                    and 10 days. If the slope that a country is on is steeper than a particular grey line, then the doubling time of confirmed cases in that country is 
+                    faster than that. For example, there are several countries for which 
+                    the slope was steeper than the ‘…every 2 days’ line – this means their case count doubled faster than every two days.</p>  
+             </article>
+        </div>
+        <div class="second-graph">
+            <iframe src="https://ourworldindata.org/grapher/new-covid-deaths-per-million?year=2020-04-19" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+        </div>
+      </div>
 </body>
 </html>
